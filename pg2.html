@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>TOOLC</title>
+</head>
+<body>
+    <style>
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: nexa;
+  }
+  ul {
+    list-style: none;
+  }
+  a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+  }
+  section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 110px 100px;
+  }
+  @media (max-width: 1000px) {
+    section {
+      padding: 100px 50px;
+    }
+  }
+  @media (max-width: 600px) {
+    section {
+      padding: 125px 30px;
+    }
+  }
+  header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    padding: 35px 100px 0;
+  }
+  header a {
+    text-transform: capitalize;
+    font-weight: 900;
+  }
+  header h2 {
+    text-transform: uppercase;
+  }
+  header .nav {
+    display: flex;
+  }
+  header .nav li {
+    margin: 0 15px;
+  }
+  header .nav li:first-child {
+    margin-left: 0;
+  }
+  header .nav li:last-child {
+    margin-right: 0;
+  }
+  @media (max-width: 1000px) {
+    header {
+      padding: 20px 50px;
+    }
+  }
+  @media (max-width: 700px) {
+    header {
+      flex-direction: column;
+    }
+    header h2 {
+      margin-bottom: 15px;
+    }
+    header .nav li {
+      margin: 0 7px;
+    }
+  }
+  .box {
+    position: relative;
+    justify-content: center;
+    min-height: 100vh;
+    color: #fff;
+    text-align: center;
+  }
+  .box video {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
+  .box h1 {
+    margin-bottom: 15px;
+    font-size: 65px;
+    text-transform: uppercase;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+  }
+  .box h3 {
+    margin-bottom: 40px;
+    font-size: 25px;
+  }
+  .box a.boxBtn {
+    padding: 15px 35px;
+    background: transparent;
+    border-radius: 50px;
+    color: #fff;
+    text-transform: uppercase;
+    border: 4px solid #fff;
+    transition: all .5s;
+  }
+  .box a.boxBtn:hover {
+    background: #fff;
+    color: #000;
+  }
+  @media (max-width: 480px) {
+    .box {
+      min-height: 600px;
+    }
+    .box h1 {
+      font-size: 32px;
+    }
+    .box h3 {
+      font-size: 20px;
+    }
+    .box a.boxBtn {
+      padding: 15px 40px;
+    }
+  }
+  .time{
+    transition-timing-function:c;
+  }
+ .sise{
+    font-size: 90px;
+   text-align: center;
+
+ }
+
+
+.siz{
+  height: 30%;
+  width: 30%;
+ 
+}
+.si{
+  height: 50%;
+  width: 50%;
+
+}
+.se{
+  height: 50%;
+  
+}
+.to{
+  height: 50%;
+width: 50%;
+}
+.si{
+  top: 0%;
+    transform: rotate(40deg);
+  height: 20%;
+  width: 20%;
+
+}
+.si2{
+  top: 0%;
+    transform: rotate(-40deg);
+  height: 20%;
+  width: 20%;
+
+}
+
+@media (max-width: 600px) {
+
+    .sise{
+        position: absolute;
+        font-size: 90px;
+        
+
+     }
+     
+     .siz{
+      
+      height: 18%;
+      width: 30%;
+  
+    }
+    .si{
+      top: 0%;
+        transform: rotate(40deg);
+      height: 30%;
+      width: 30%;
+  
+    }
+    .si2{
+      top: 0%;
+      transform: rotate(-40deg);
+      height: 30%;
+      width: 30%;
+  
+    }
+    .se{
+      left: 0%;
+      margin-left: 0%;
+      height: 50%;
+      width: 40%;
+      
+    }
+}
+.t{
+  animation-duration: 5s;
+  
+}
+
+@media (max-width: 400px) {
+
+  .sise{
+      position: absolute;
+      font-size: 70px;
+      
+      
+
+   }
+   body{
+    background-color: antiquewhite;
+   }
+   
+   .siz{
+   
+    height: 15%;
+    width: 30%;
+
+  }
+  .si{
+    top: 0%;
+      transform: rotate(-90deg);
+    height: 30%;
+    width: 30%;
+
+  }
+  .si2{
+    top: 0%;
+      transform: rotate(90deg);
+    height: 30%;
+    width: 30%;
+
+  }
+  .se{
+    left: 0%;
+    margin-left: 0%;
+    height: 30%;
+    width: 30%;
+    
+  }
+  .to{
+    height: 40%;
+  width: 70%;
+
+  }
+}
+.t{
+animation-duration: 5s;
+
+}
+
+</style>
+ <!---------------------------------------------------------------------------STYLE------------------------------------------------------------------------------------------------>
+<img src="2026201-607d8b.svg" alt="couple" class="w3-display-bottomleft se">
+<img src="together_forever.svg" alt=" together_forever" class="w3-display-topmiddle to w">
+
+<img src="beautiful-piano-115480.svg" alt="" class="siz w3-display-bottomright">
+
+<h1  class="sise w3-display-middle  w3-animate-opacity t" style="font-family: 'Courier New', Courier, monospace;">
+  I LOVE YOU <img src="" alt=""></h1>
+<a href="sms:// +91 8825722455 ?body =[I LOVE YOU TOO]" class="w3-display-bottommiddle"> 
+  <button class="w3-btn  w3-border w3-border-red w3-round-large ">Accept</button>
+</a>
+
+<audio loop  hidden preload="auto/ metadata/ none" autoplay >
+  <source src="song1.wav" type="audio/wav">
+  <source src="song2.mp4" type="audio/mp4">
+  <source src="song5.aiff" type="audio/aiff">
+  <source src="song4.m4a" type="audio/m4a">
+  <source src="song3.ogg" type="audio/ogg">
+</audio>
+</body>
+</html>
